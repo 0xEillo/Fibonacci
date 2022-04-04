@@ -1,0 +1,11 @@
+{
+  "name": "Fibonacci",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Oliver-Ryall/Fibonacci.git",
+  "author": "Oliver Ryall <oliryall0404@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.2"
+  }
+}
