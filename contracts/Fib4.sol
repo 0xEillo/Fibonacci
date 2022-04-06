@@ -1,7 +1,7 @@
 pragma solidity 0.8.13;
 
 contract Fib4 {
-    fallback() external payable {
+    fallback(bytes calldata _input) external payable(bytes memory _output) {
         uint256 n = msg.value;
         if (n <= 2) {
             uint256 number = 0;
