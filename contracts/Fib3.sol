@@ -10,7 +10,7 @@ contract Fib3 {
 
         if (N == 0) {
             uint256 number = 0;
-            return abi.encodePacked(number);
+            return abi.encodePacked(number);    // returning the uint as bytes
         }
 
         for (uint256 i = 2; i < N; i++) {
@@ -19,6 +19,6 @@ contract Fib3 {
             b = c;
         }
 
-        return abi.encodePacked(b);
+        return abi.encodePacked(b); // returning the uint as bytes
     }
 }
