@@ -1,7 +1,7 @@
 pragma solidity 0.8.13;
 
 contract Fib3 {
-    fallback() external payable {
+    fallback(bytes calldata _input) external payable returns(bytes memory _output) {
         uint256 N = msg.value;
         uint256 a = 1;
         uint256 b = 1;
