@@ -8,3 +8,11 @@ Please provide all working solutions as you optimize, along with:
 * comments with contents of stack and memory as appropriate
 Bonus: optimize for gas costs instead of code size
 as a reference example, the shortest runtime bytecode for returning the chainId is: 0x463d52593df3
+
+## Contracts
+
+### Fib1
+
+### Fib2
+
+### Fib3
