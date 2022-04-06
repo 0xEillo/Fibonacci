@@ -13,6 +13,20 @@ as a reference example, the shortest runtime bytecode for returning the chainId 
 
 ### Fib1
 
+First implementation of a contract with a function returning the Fibonacci number at the Nth index.
+fib(100) = 61260 gas
+
 ### Fib2
 
+2nd implementation using the fallback function to comply to the (no function selector) requiremnt. uint256 is sent as Wei in the transaction.
+fib(100) = 61406 gas
+
 ### Fib3
+
+3rd implementation using the fallback function to comply to the (no function selector) requiremnt, however the result is returned in bytes by the fallback function to comply to (returns the fibonacci number at that index).
+fib(100) = 60511 gas
+
+### Fib4
+
+4th implementation using the above modification but changing the algorithm to Binet's Formula (Found online) to try and reduce gas costs.
+fib(100) = 29985 gas
