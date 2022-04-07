@@ -23,7 +23,7 @@ library Fib {
 }
 
 contract Fib6 {
-    fallback() external payable {
-        bytes memory result = Fib.run(msg.value);
+    fallback(bytes calldata _input) external payable returns (bytes memory _output) {
+        _output = Fib.run(msg.value);
     }
 }
