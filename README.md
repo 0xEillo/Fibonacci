@@ -42,6 +42,9 @@ fib(100) = 29985 gas
 5th implementation taking a uint256 as bytes calldata and returning the fibonacci number as bytes.
 fib(100) = 60856 gas
 
+### Fib6
+6th implementation moving all of the fibonacci caluclation into a library. The code in the library does not count as part of the contract bytecode and therefor reduces it.
+
 
 ## Conclusion
 Through testing multiple methods and different ways of obtaining the same result, contract Fib3 has the shortest runtime bytecode however contract Fib4 only uses half the gas of Fib3
