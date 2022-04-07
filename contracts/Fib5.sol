@@ -3,7 +3,7 @@ pragma solidity 0.8.13;
 // The contents stored in the stack are erased after every function call
 
 contract Fib5 {
-    fallback() external payable {
+    fallback(bytes calldata _input) external payable returns(bytes memory _output) {
         bytes memory m_input = _input; // copy bytes into memory and place on the stack
         uint256 N; // declare uint N which will bet set to the bytes inputed converted into uint below
         assembly {

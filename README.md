@@ -37,3 +37,11 @@ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 CALLDATASIZE PUSH1 0x60 PUSH1 0x0 CALLVAL
 4th implementation using the above modification but changing the algorithm to Binet's Formula (Found online) to try and reduce gas costs.
 fib(100) = 29985 gas
 1662
+
+### Fib5
+5th implementation taking a uint256 as bytes calldata and returning the fibonacci number as bytes.
+fib(100) = 60856 gas
+
+
+## Conclusion
+Through testing multiple methods and different ways of obtaining the same result, contract Fib3 has the shortest runtime bytecode however contract Fib4 only uses half the gas of Fib3
